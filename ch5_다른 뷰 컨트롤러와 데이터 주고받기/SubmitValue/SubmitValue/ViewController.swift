@@ -60,6 +60,22 @@ class ViewController: UIViewController {
         self.navigationController?.pushViewController(rvc, animated: true)
     }
     
+    @IBAction func onPerformSegue(_ sender: Any) {
+        self.performSegue(withIdentifier: "ManualSubmit", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // 목적지 뷰 컨트롤러 인스턴스 읽어오기
+        let dest = segue.destination
+        
+        guard let rvc = dest as? ResultViewController else {
+            return
+        }
+        // 값 전달
+        rvc.paramEmail = self.email.text!       // 이메일
+        rvc.paramUpdate = self.isUpdate.isOn    // 자동갱신 여부
+        rvc.paramInterval = self.interval.value // 갱신주기
+    }
     
 }
 
