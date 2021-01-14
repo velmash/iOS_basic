@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet var resultUpdate: UILabel!
     @IBOutlet var resultInterval: UILabel!
     
+    /* 직접 주고받는 소스
     // 값을 직접 전달받을 프로퍼티들
     var paramEmail: String?     // 이메일 값을 전달받을 속성
     var paramUpdate: Bool?      // 자동 갱신 여부를 전달받을 속성
@@ -30,5 +31,21 @@ class ViewController: UIViewController {
             resultInterval.text = "\(Int(interval))분마다"
         }
     }
+     */
+    
+    override func viewWillAppear(_ animated: Bool) {
+        let ad = UIApplication.shared.delegate as? AppDelegate
+        
+        if let email = ad?.paramEmail {
+            resultEmail.text = email
+        }
+        if let update = ad?.paramUpdate {
+            resultUpdate.text = update == true ? "자동갱신" : "자동갱신안함"
+        }
+        if let interval = ad?.paramInterval {
+            resultInterval.text = "\(Int(interval))분마다"
+        }
+    }
+    
 }
 
