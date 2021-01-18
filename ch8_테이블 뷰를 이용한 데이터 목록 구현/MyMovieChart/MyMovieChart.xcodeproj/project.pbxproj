@@ -15,6 +15,10 @@
 		3A35955025B552DF00DBF5FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A35954E25B552DF00DBF5FB /* LaunchScreen.storyboard */; };
 		3A35955A25B5537200DBF5FB /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A35955925B5537200DBF5FB /* ListViewController.swift */; };
 		3A35955D25B5569E00DBF5FB /* MovieVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A35955C25B5569E00DBF5FB /* MovieVO.swift */; };
+		3A35956025B569FB00DBF5FB /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A35955F25B569FB00DBF5FB /* MovieCell.swift */; };
+		3AF7D12F25B56F6C00DD1F9A /* darknight.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3AF7D12C25B56F6C00DD1F9A /* darknight.jpg */; };
+		3AF7D13025B56F6C00DD1F9A /* secret.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3AF7D12D25B56F6C00DD1F9A /* secret.jpg */; };
+		3AF7D13125B56F6C00DD1F9A /* rain.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3AF7D12E25B56F6C00DD1F9A /* rain.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		3A35955125B552DF00DBF5FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A35955925B5537200DBF5FB /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		3A35955C25B5569E00DBF5FB /* MovieVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieVO.swift; sourceTree = "<group>"; };
+		3A35955F25B569FB00DBF5FB /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		3AF7D12C25B56F6C00DD1F9A /* darknight.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = darknight.jpg; sourceTree = "<group>"; };
+		3AF7D12D25B56F6C00DD1F9A /* secret.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = secret.jpg; sourceTree = "<group>"; };
+		3AF7D12E25B56F6C00DD1F9A /* rain.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rain.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,7 @@
 		3A35954225B552DB00DBF5FB /* MyMovieChart */ = {
 			isa = PBXGroup;
 			children = (
+				3AF7D12B25B56F6C00DD1F9A /* Resources */,
 				3A35954325B552DB00DBF5FB /* AppDelegate.swift */,
 				3A35954525B552DB00DBF5FB /* SceneDelegate.swift */,
 				3A35954725B552DB00DBF5FB /* ViewController.swift */,
@@ -69,8 +78,19 @@
 				3A35954C25B552DF00DBF5FB /* Assets.xcassets */,
 				3A35954E25B552DF00DBF5FB /* LaunchScreen.storyboard */,
 				3A35955125B552DF00DBF5FB /* Info.plist */,
+				3A35955F25B569FB00DBF5FB /* MovieCell.swift */,
 			);
 			path = MyMovieChart;
+			sourceTree = "<group>";
+		};
+		3AF7D12B25B56F6C00DD1F9A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3AF7D12C25B56F6C00DD1F9A /* darknight.jpg */,
+				3AF7D12D25B56F6C00DD1F9A /* secret.jpg */,
+				3AF7D12E25B56F6C00DD1F9A /* rain.jpg */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,9 +150,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AF7D12F25B56F6C00DD1F9A /* darknight.jpg in Resources */,
+				3AF7D13125B56F6C00DD1F9A /* rain.jpg in Resources */,
 				3A35955025B552DF00DBF5FB /* LaunchScreen.storyboard in Resources */,
 				3A35954D25B552DF00DBF5FB /* Assets.xcassets in Resources */,
 				3A35954B25B552DB00DBF5FB /* Main.storyboard in Resources */,
+				3AF7D13025B56F6C00DD1F9A /* secret.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,6 +168,7 @@
 			files = (
 				3A35954825B552DB00DBF5FB /* ViewController.swift in Sources */,
 				3A35954425B552DB00DBF5FB /* AppDelegate.swift in Sources */,
+				3A35956025B569FB00DBF5FB /* MovieCell.swift in Sources */,
 				3A35955A25B5537200DBF5FB /* ListViewController.swift in Sources */,
 				3A35954625B552DB00DBF5FB /* SceneDelegate.swift in Sources */,
 				3A35955D25B5569E00DBF5FB /* MovieVO.swift in Sources */,
